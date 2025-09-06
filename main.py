@@ -60,7 +60,7 @@ class ChatRequest(BaseModel):
 # --- Groq LLM Helper ---
 def query_groq_llm(question: str) -> str:
     """Sends a question to the Groq API and returns the answer."""
-    url = "https://api.groq.com/openai/v1/chat/completions"
+    url = "https://website-bot-epsb.onrender.com"
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json",
